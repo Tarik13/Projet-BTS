@@ -1,0 +1,10 @@
+2012-12-04 11:44:55 Error: [MissingControllerException] Controller class ContentController could not be found.
+#0 C:\xampp\htdocs\Projet\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-04 11:45:14 Error: [MissingViewException] View file "C:\xampp\htdocs\Projet\app\View\Contents\index.ctp" is missing.
+#0 C:\xampp\htdocs\Projet\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Projet\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Projet\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 C:\xampp\htdocs\Projet\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\Projet\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
