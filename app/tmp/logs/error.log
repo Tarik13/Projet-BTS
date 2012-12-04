@@ -20,3 +20,17 @@
 2012-12-04 13:35:04 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\xampp\htdocs\Projet\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-12-04 14:07:26 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'bordeauxtour'" is missing, or could not be created.
+#0 C:\wamp\www\projetbts\lib\Cake\Model\Datasource\DboSource.php(245): Mysql->connect()
+#1 C:\wamp\www\projetbts\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\wamp\www\projetbts\lib\Cake\Model\Model.php(3372): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\projetbts\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\wamp\www\projetbts\lib\Cake\Model\Model.php(3398): Model->setSource('contents')
+#5 C:\wamp\www\projetbts\lib\Cake\Model\Model.php(2653): Model->getDataSource()
+#6 C:\wamp\www\projetbts\app\Controller\ContentsController.php(8): Model->find('all')
+#7 [internal function]: ContentsController->index()
+#8 C:\wamp\www\projetbts\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ContentsController), Array)
+#9 C:\wamp\www\projetbts\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\projetbts\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(ContentsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\projetbts\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
